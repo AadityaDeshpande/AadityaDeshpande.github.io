@@ -7,10 +7,39 @@
 	<!--Bootstrap CSS-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/index.css">
-	
+	<style>
+	#resume{
+		height:100% !important;
+		height:100vh !important;
+	}
+	</style>
 	<!--adding jquery (will use in future)-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<script src="js/index.js"></script>	
+	<script>
+	function timedRefresh(millisecondsToWait) 
+	{
+	/*document.location.reload(true)*/
+	/*var myvar = setTimeout("location.reload(true);",timeoutPeriod);
+	
+	clearTimeout(myvar);*/
+	setTimeout(function() {
+    // Whatever you want to do after the wait
+    	$(document).ready(function(){    
+    			//Check if the current URL contains '#'
+    		if(document.URL.indexOf("#")==-1){
+        		// Set the URL to whatever it was plus "#".
+        		url = document.URL+"#";
+        		location = "#";
+			//Reload the page
+        		location.reload(true);
+    			}
+			});
+    	}, millisecondsToWait);	
+	}
+
+window.onload = timedRefresh(1000);
+	</script>
 	</head>
 	
 	<body>
@@ -36,11 +65,11 @@
 					<!--<iframe src="media/Resume_job.pdf" height="87%" width="100%"></iframe>-->
 					<!--<embed src="media/Resume_job.pdf" height="87%" width="100%">-->
 						
-<object data="media/Resume_job.pdf" type="application/pdf" width="100%" height="87%">
+<!--<object data="media/Resume_job.pdf" type="application/pdf" width="100%" height="87%">
   	<p>For mobile view <a href="media/Resume_job.pdf" target="_blank">My Resume</a></p>
 	
-</object>
-					
+</object>-->
+<iframe src="http://docs.google.com/gview?url=https://github.com/AadityaDeshpande/AadityaDeshpande.github.io/raw/master/media/Resume_job.pdf&embedded=true" width="100%" height="100%" frameborder="0" scrolling="no" id="resume"></iframe>			
 					
 				</div>
 			</div>
