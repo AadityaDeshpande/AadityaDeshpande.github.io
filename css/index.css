@@ -1,18 +1,17 @@
-body{
-	/*background-color: #4B77BE;*/
-	background-color:#f0f0ff;
-    font-family:'Titillium Web' !important;
-    text-decoration:none;
-    color:#444499;
+body {
+  /*background-color: #4B77BE;*/
+  background-color: #f0f0ff;
+  font-family: "Titillium Web" !important;
+  text-decoration: none;
+  color: #444499;
 }
-P{
-	font-size: 20px;
-	
+P {
+  font-size: 20px;
 }
-.card{
-	color:black;
-	background-color: #ade4ed;
+.card {
+  color: black;
+  background-color: #ade4ed;
 }
-footer{
-	background-color: #aee4ec63;
+footer {
+  background-color: #aee4ec63;
 }

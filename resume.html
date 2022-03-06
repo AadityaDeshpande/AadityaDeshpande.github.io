@@ -1,88 +1,125 @@
 <html>
-	<head>
-	<title>Resume</title>
-	 <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!--Bootstrap CSS-->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/index.css">
-	
-	<style>
-	#resume{
-		height:100% !important;
-		height:100vh !important;
-	}
-	</style>
-	<!--adding jquery (will use in future)-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-	<script src="js/index.js"></script>	
-	<script>
-	function timedRefresh(millisecondsToWait) 
-	{
-	/*document.location.reload(true)*/
-	/*var myvar = setTimeout("location.reload(true);",timeoutPeriod);
+  <head>
+    <title>Resume</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!--Bootstrap CSS-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <style>
+      #resume {
+        height: 100% !important;
+        height: 100vh !important;
+      }
+    </style>
+    <!--adding jquery (will use in future)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+      function timedRefresh(millisecondsToWait) {
+        /*document.location.reload(true)*/
+        /*var myvar = setTimeout("location.reload(true);",timeoutPeriod);
 	
 	clearTimeout(myvar);*/
-	setTimeout(function() {
-    // Whatever you want to do after the wait
-    	$(document).ready(function(){    
-    			//Check if the current URL contains '#'
-    		if(document.URL.indexOf("#")==-1){
-        		// Set the URL to whatever it was plus "#".
-        		url = document.URL+"#";
-        		location = "#";
-			//Reload the page
-        		location.reload(true);
-    			}
-			});
-    	}, millisecondsToWait);	
-	}
+        setTimeout(function () {
+          // Whatever you want to do after the wait
+          $(document).ready(function () {
+            //Check if the current URL contains '#'
+            if (document.URL.indexOf("#") == -1) {
+              // Set the URL to whatever it was plus "#".
+              url = document.URL + "#";
+              location = "#";
+              //Reload the page
+              location.reload(true);
+            }
+          });
+        }, millisecondsToWait);
+      }
 
-//window.onload = timedRefresh(7000);
-	</script>
-	</head>
-	
-	<body>
-	<!--making a naviagtion-bar-->
-	<nav class="navbar navbar-expand-lg navbar-light ">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand active">Portfolio</a>
-			</div>
-			<ul class="nav navbar-nav">
-				<li class="btn btn-outline-info mr-4 mb-2 nav-item"><a class="nav-link" href="index.html"><b>Home</b></a> </li>
-				<li class="btn btn-outline-info mr-4 mb-2 nav-item"><a class="nav-link" href="project.html"><b>Projects</b></a> </li>
-				<li class="btn btn-outline-info mr-4 mb-2 nav-item active"><a class="nav-link" href="http://docs.google.com/gview?url=https://github.com/AadityaDeshpande/AadityaDeshpande.github.io/raw/master/media/Resume_job.pdf&embedded=true" target="_blank"><b>Resume</b></a> </li>
-				<li class="btn btn-outline-info mr-4 mb-2 nav-item"><a class="nav-link" href="contact.html"><b>Contact me</b></a> </li>
-				
-			</ul>
-		</div>
-	</nav>
-	<!--navigation bar ended-->
-		<div class="container">
-			<div class="row">	
-				<div class="col">
-					<!--<iframe src="media/Resume_job.pdf" height="87%" width="100%"></iframe>-->
-				<!-- <embed src="http://docs.google.com/gview?url=https://github.com/AadityaDeshpande/AadityaDeshpande.github.io/raw/master/media/Resume_job.pdf&embedded=true" id="resume" height="100%" width="100%"> -->
-						
-<object data="http://docs.google.com/gview?url=https://github.com/AadityaDeshpande/AadityaDeshpande.github.io/raw/master/media/Resume1_job.pdf&embedded=true" type="application/pdf" id="resume" width="100%" height="100%">
-  	<p>For mobile view <a href="media/Resume1_job.pdf" target="_blank">My Resume</a></p>
-	
-</object>
-<!-- <iframe src="http://docs.google.com/gview?url=https://github.com/AadityaDeshpande/AadityaDeshpande.github.io/raw/master/media/Resume_job.pdf&embedded=true" width="100%" height="100%" frameborder="0" scrolling="no" id="resume"></iframe>			 -->
-					
-				</div>
-			</div>
-		</div>
-		<!--
+      //window.onload = timedRefresh(7000);
+    </script>
+  </head>
+
+  <body>
+    <!--making a naviagtion-bar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand active">Portfolio</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="btn btn-outline-info mr-4 mb-2 nav-item">
+            <a class="nav-link" href="index.html"><b>Home</b></a>
+          </li>
+          <li class="btn btn-outline-info mr-4 mb-2 nav-item">
+            <a class="nav-link" href="project.html"><b>Projects</b></a>
+          </li>
+          <li class="btn btn-outline-info mr-4 mb-2 nav-item active">
+            <a
+              class="nav-link"
+              href="http://docs.google.com/gview?url=https://github.com/AadityaDeshpande/AadityaDeshpande.github.io/raw/master/media/Resume_job.pdf&embedded=true"
+              target="_blank"
+              ><b>Resume</b></a
+            >
+          </li>
+          <li class="btn btn-outline-info mr-4 mb-2 nav-item">
+            <a class="nav-link" href="contact.html"><b>Contact me</b></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--navigation bar ended-->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <!--<iframe src="media/Resume_job.pdf" height="87%" width="100%"></iframe>-->
+          <!-- <embed src="http://docs.google.com/gview?url=https://github.com/AadityaDeshpande/AadityaDeshpande.github.io/raw/master/media/Resume_job.pdf&embedded=true" id="resume" height="100%" width="100%"> -->
+
+          <object
+            data="http://docs.google.com/gview?url=https://github.com/AadityaDeshpande/AadityaDeshpande.github.io/raw/master/media/Resume1_job.pdf&embedded=true"
+            type="application/pdf"
+            id="resume"
+            width="100%"
+            height="100%"
+          >
+            <p>
+              For mobile view
+              <a href="media/Resume1_job.pdf" target="_blank">My Resume</a>
+            </p>
+          </object>
+          <!-- <iframe src="http://docs.google.com/gview?url=https://github.com/AadityaDeshpande/AadityaDeshpande.github.io/raw/master/media/Resume_job.pdf&embedded=true" width="100%" height="100%" frameborder="0" scrolling="no" id="resume"></iframe>			 -->
+        </div>
+      </div>
+    </div>
+    <!--
 		<iframe src='media/Resume_job.pdf' width='100%' height='87%' frameborder='0'>This is an embedded <a target='_blank' href='http://office.com'>Microsoft Office</a> document, powered by <a target='_blank' href='http://office.com/webapps'>Office Online</a>.</iframe>-->
-		
-		
-		<!-- Optional JavaScript -->
+
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	</body>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
